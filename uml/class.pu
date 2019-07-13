@@ -1,0 +1,50 @@
+@startuml
+enum NodeType {
+  Root
+
+  Header1
+  Header2
+  Header3
+  Header4
+  Header5
+  Header6
+
+  Division
+
+  HighlightCode
+
+  DataBind
+  EvaluateJavaScript
+}
+
+class NodeAttribute {
+  + name: string
+  + value: any
+}
+
+interface INode {
+  + type: NodeType
+  + attributes: Array<NodeAttribute>
+  + nodes: Array<Node>
+}
+INode -> NodeType
+INode -> NodeAttribute
+
+class Node {
+  + toJSON(): any
+}
+Node ..|> INode
+
+interface INodeRenderer<TRenderResult> {
+  - data: any
+  + render(node: INode): TRenderResult
+}
+INodeRenderer -> INode
+
+interface INodeCompiler<TCompileSource> {
+  - data: any
+  + compile(source: TCompileSource): INode
+}
+INodeCompiler -> INode
+
+@enduml

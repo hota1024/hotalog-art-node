@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es6",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./lib/",
+    "rootDir": "./src/",
+    "sourceMap": true,
+    "baseUrl": "./",
+    "esModuleInterop": true
+  },
+  "include": ["src"],
+  "exclude": ["test"]
+}

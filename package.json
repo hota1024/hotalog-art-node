@@ -1,0 +1,33 @@
+{
+  "name": "hotalog-art-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha -r ts-node/register test/**/*.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/markdown-it": "^0.0.8",
+    "@types/mocha": "^5.2.7",
+    "@types/jsdom": "^12.2.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^3.12.16",
+    "jsdom": "^15.1.1",
+    "markdown-it": "^9.0.1"
+  }
+}
