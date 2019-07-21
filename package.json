@@ -12,9 +12,9 @@
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.1.7",
+    "@types/jsdom": "^12.2.4",
     "@types/markdown-it": "^0.0.8",
     "@types/mocha": "^5.2.7",
-    "@types/jsdom": "^12.2.4",
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
@@ -26,8 +26,6 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "fast-xml-parser": "^3.12.16",
-    "jsdom": "^15.1.1",
-    "markdown-it": "^9.0.1"
+    "axios": "^0.19.0"
   }
 }
